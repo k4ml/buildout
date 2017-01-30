@@ -1606,7 +1606,8 @@ def _move_to_eggs_dir_and_compile(dist, dest):
         else:
             # There were no problems during the rename.
             # Do the compile step.
-            redo_pyc(newloc)
+            #redo_pyc(newloc)
+            pass
     finally:
         # Remember that temporary directories must be removed
         shutil.rmtree(tmp_dest)
